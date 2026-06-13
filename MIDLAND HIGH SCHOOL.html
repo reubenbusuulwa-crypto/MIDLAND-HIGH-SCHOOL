@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)http://127.0.0.1:5500/my%20website/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Midland High School Mukono – Buntaba | SDA Centre of Excellence</title>
+  <link href="./MIDLAND HIGH SCHOOL_files/css2" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; background: #fefcf7; color: #1e2f2a; line-height: 1.5; overflow-x: hidden; }
+    .container { max-width: 1280px; margin: 0 auto; padding: 0 28px; }
+    header { background: #0a2c28; box-shadow: 0 6px 18px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+    .navbar { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; max-width: 1300px; margin: 0 auto; padding: 0.9rem 2rem; gap: 1rem; }
+    .logo h2 { color: #f5c542; font-weight: 800; font-size: 1.6rem; cursor: pointer; }
+    .nav-links { display: flex; gap: 1.3rem; list-style: none; flex-wrap: wrap; }
+    .nav-links li a { text-decoration: none; color: #fef3df; font-weight: 500; transition: 0.2s; padding: 0.5rem 0; border-bottom: 2px solid transparent; }
+    .nav-links li a:hover, .nav-links li a.active { color: #ffdd99; border-bottom-color: #ffdd99; }
+    .nav-links li:last-child a { background: #f2b83b; color: #1e3d37; padding: 0.5rem 1.2rem; border-radius: 30px; border-bottom: none; }
+    .menu-toggle { display: none; background: none; border: none; color: #f5c542; font-size: 1.8rem; cursor: pointer; }
+    .hero { position: relative; background: linear-gradient(115deg, #0c312c 0%, #1e544b 100%); min-height: 85vh; display: flex; align-items: center; justify-content: center; text-align: center; }
+    .hero-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle, rgba(0,0,0,0.2) 0%, rgba(0,20,14,0.7) 100%); }
+    .hero-content { position: relative; z-index: 2; max-width: 900px; padding: 2rem; animation: fadeInUp 1s ease-out; }
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    .hero-content h1 { font-size: 3.2rem; font-weight: 800; color: #fff9ec; margin-bottom: 1.2rem; text-shadow: 2px 2px 12px rgba(0,0,0,0.4); }
+    .hero-content p { font-size: 1.25rem; color: #fff6e5; margin-bottom: 2rem; font-weight: 500; text-align: center; }
+    .hero-buttons { display: flex; gap: 1.3rem; justify-content: center; flex-wrap: wrap; }
+    .btn { background: #f2b83b; color: #1e3d37; padding: 0.9rem 2.2rem; border-radius: 50px; font-weight: 700; text-decoration: none; transition: 0.2s; display: inline-block; border: none; cursor: pointer; }
+    .btn-blue { background: #2c7a6b; color: white; }
+    .btn:hover { transform: translateY(-3px); background: #e6a81f; }
+    section { padding: 5rem 0; }
+    h2 { font-size: 2.5rem; font-weight: 700; color: #1f594e; margin-bottom: 2rem; position: relative; display: inline-block; }
+    h2:after { content: ''; display: block; width: 70px; height: 4px; background: #f2b83b; margin-top: 10px; border-radius: 4px; }
+    .welcome, .about { background: #ffffff; }
+    p { text-align: justify; }
+    .principal-text p { text-align: left; }
+    .principal-card { display: flex; flex-wrap: wrap; background: #fcf9f2; border-radius: 40px; overflow: hidden; box-shadow: 0 20px 30px rgba(0,0,0,0.08); margin-top: 1.8rem; }
+    .principal-image { flex: 1; min-height: 340px; background: linear-gradient(135deg, #2c6b5e, #1f4d43); display: flex; align-items: center; justify-content: center; color: #ffeaae; font-size: 1.2rem; }
+    .principal-text { flex: 2; padding: 2.5rem 2.8rem; }
+    .principal-text h3 { font-size: 1.9rem; color: #174e44; margin-bottom: 1rem; }
+    .subject-grid, .vocational-grid, .life-grid, .department-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 1.8rem; margin-bottom: 3rem; }
+    .card { background: white; border-radius: 30px; padding: 1.6rem 1rem; text-align: center; box-shadow: 0 12px 22px rgba(0,0,0,0.04); transition: 0.3s; border: 1px solid #f0e7da; cursor: pointer; }
+    .card:hover { transform: translateY(-5px); border-color: #f2b83b; }
+    .gallery-preview { background: #ece5d9; border-radius: 36px; text-align: center; padding: 3rem 1.5rem; margin-top: 1.2rem; border: 2px solid #d6c8b2; cursor: pointer; }
+    .staff-admin-preview { background: #e8e1d3; border-radius: 28px; text-align: center; padding: 2rem; margin-bottom: 2.5rem; }
+    .admissions-section { background: linear-gradient(135deg, #f9f6ef 0%, #fefcf7 100%); }
+    .form-container { max-width: 950px; margin: 0 auto; background: white; border-radius: 32px; padding: 2.5rem; box-shadow: 0 20px 35px rgba(0,0,0,0.1); }
+    .form-row { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.2rem; }
+    .form-group { flex: 1; min-width: 200px; margin-bottom: 1rem; }
+    .form-group label { display: block; font-weight: 600; margin-bottom: 0.5rem; color: #2c5a50; }
+    .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 12px 16px; border: 1.5px solid #e0d6c8; border-radius: 16px; font-family: 'Poppins', sans-serif; }
+    .form-group input:focus, .form-group select:focus { outline: none; border-color: #f2b83b; }
+    .radio-group { display: flex; gap: 1.5rem; align-items: center; }
+    .file-group small { display: block; font-size: 0.7rem; color: #666; margin-top: 5px; }
+    .submit-btn { background: #f2b83b; padding: 14px; border: none; border-radius: 50px; font-weight: 700; font-size: 1rem; cursor: pointer; width: 100%; margin-top: 1rem; }
+    .submit-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+    .info-box { background: #e8f0ed; border-radius: 24px; padding: 1.5rem; margin-top: 2rem; text-align: center; }
+    .toast-notification { position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%) translateY(100px); background: #1f594e; color: white; padding: 12px 28px; border-radius: 50px; z-index: 2000; transition: 0.3s; text-align: center; }
+    .toast-notification.show { transform: translateX(-50%) translateY(0); }
+    .back-to-top { position: fixed; bottom: 30px; right: 30px; background: #f2b83b; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; cursor: pointer; opacity: 0; visibility: hidden; transition: 0.3s; border: none; }
+    .back-to-top.show { opacity: 1; visibility: visible; }
+    footer { background: #092622; color: #ecf3e9; padding: 3rem 0 2rem; text-align: center; }
+    footer h2 { color: #ffdb8a; font-size: 1.8rem; }
+    footer h2:after { display: none; }
+    .social-links { display: flex; justify-content: center; gap: 2rem; margin: 1.5rem 0; }
+    .social-links a { color: #ffda88; text-decoration: none; cursor: pointer; }
+    @media (max-width: 850px) { .menu-toggle { display: block; } .nav-links { display: none; width: 100%; flex-direction: column; align-items: center; } .nav-links.show { display: flex; } .hero-content h1 { font-size: 1.8rem; } .form-container { padding: 1.5rem; } }
+    @media (max-width: 650px) { .principal-card { flex-direction: column; } .subject-grid, .vocational-grid, .life-grid { grid-template-columns: 1fr; } .form-row { flex-direction: column; gap: 0; } }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="logo"><h2 id="homeLogo">Midland High School</h2></div>
+    <button class="menu-toggle" id="menuToggle">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="http://127.0.0.1:5500/my%20website/index.html#home" class="nav-item">Home</a></li>
+      <li><a href="http://127.0.0.1:5500/my%20website/index.html#about" class="nav-item">About Us</a></li>
+      <li><a href="http://127.0.0.1:5500/my%20website/index.html#principal" class="nav-item">Principal</a></li>
+      <li><a href="http://127.0.0.1:5500/my%20website/index.html#academics" class="nav-item">Academics</a></li>
+      <li><a href="http://127.0.0.1:5500/my%20website/index.html#student-life" class="nav-item">Student Life</a></li>
+      <li><a href="http://127.0.0.1:5500/my%20website/index.html#gallery" class="nav-item">Gallery</a></li>
+      <li><a href="http://127.0.0.1:5500/my%20website/index.html#staff" class="nav-item">Staff Directory</a></li>
+      <li><a href="http://127.0.0.1:5500/my%20website/index.html#admissions" class="nav-item">Admissions S1/S5</a></li>
+      <li><a href="http://127.0.0.1:5500/my%20website/index.html#contact" class="nav-item">Contact</a></li>
+    <li><a href="http://127.0.0.1:5500/my%20website/index.html#" id="openAdminBtn" style="background:#f2b83b;color:#1e3d37;padding:5px 15px;border-radius:30px;">👑 Admin</a></li></ul>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Midland High School Mukono – Buntaba</h1>
+    <p>A Seventh-day Adventist Center of Excellence Dedicated to Academic Achievement, Character Development, Leadership, Innovation and Service.</p>
+    <div class="hero-buttons"><a href="http://127.0.0.1:5500/my%20website/index.html#about" class="btn">Learn More</a><a href="http://127.0.0.1:5500/my%20website/index.html#admissions" class="btn btn-blue">Apply Now S1/S5</a></div>
+  </div>
+</section>
+
+<section class="welcome"><div class="container"><h2>Welcome to Midland High School Mukono – Buntaba</h2><p>Welcome to Midland High School Mukono–Buntaba, a center of excellence dedicated to nurturing young minds through quality education, strong moral values, and practical life skills. As a Seventh-day Adventist founded institution, we are committed to developing students academically, spiritually, socially, and physically. Our learning environment inspires curiosity, creativity, discipline, and leadership, preparing learners to excel in an ever-changing world. Through the dedication of our professional staff and the support of parents and stakeholders, we continue to shape responsible citizens who positively impact society. We invite you to explore our website and discover the opportunities, achievements, and vibrant school life that make Midland High School Mukono–Buntaba a place where futures are built, talents are nurtured, and dreams become reality.</p></div></section>
+
+<section id="about" class="about"><div class="container"><h2>About Us</h2><p>Midland High School Mukono–Buntaba is a Christian institution founded on the principles and values of the Seventh-day Adventist faith. We believe that true education goes beyond academic achievement and focuses on the balanced development of the mind, body, and spirit. Guided by biblical principles, we strive to cultivate integrity, responsibility, service, and respect among our learners. Through academic excellence, spiritual growth, vocational training and character development, we empower learners to become productive citizens and future leaders.</p></div></section>
+
+<section id="principal" class="principal"><div class="container"><h2>Message from the Principal</h2><div class="principal-card"><div class="principal-image">📷 Mrs. Mawejje Deborah</div><div class="principal-text"><h3>Mrs. Mawejje Deborah</h3><p>Welcome to Midland High School Mukono–Buntaba. Our goal is to provide holistic education that equips students with academic excellence, strong character, practical skills, and spiritual values. We believe every learner possesses unique abilities that can be nurtured through quality teaching, discipline, innovation, and hard work. Our academic philosophy emphasizes learner-centered education, critical thinking, creativity, and lifelong learning. Looking ahead, we aim to strengthen our academic programs, expand vocational training opportunities, embrace technology in learning, and continue developing facilities that support excellence in all areas of student growth.</p></div></div></div></section>
+
+<section id="academics" class="academics"><div class="container"><h2>Academics</h2><div class="subject-grid" id="subjectGrid"><div class="card"><strong>Mathematics</strong></div><div class="card"><strong>English Language</strong></div><div class="card"><strong>Biology</strong></div><div class="card"><strong>Chemistry</strong></div><div class="card"><strong>Physics</strong></div><div class="card"><strong>Geography</strong></div><div class="card"><strong>History</strong></div><div class="card"><strong>ICT</strong></div><div class="card"><strong>Agriculture</strong></div><div class="card"><strong>Entrepreneurship</strong></div><div class="card"><strong>Literature</strong></div><div class="card"><strong>Christian Religious Education</strong></div></div><h2>Vocational Studies</h2><div class="vocational-grid" id="vocationalGrid"><div class="card"><h3>Electrical Installation</h3><p>Electrical wiring, maintenance and troubleshooting.</p></div><div class="card"><h3>Bakery &amp; Pastry</h3><p>Bread making, cakes, pastries and food production.</p></div><div class="card"><h3>Welding &amp; Fabrication</h3><p>Metal fabrication and welding skills.</p></div><div class="card"><h3>Motor Vehicle Mechanics</h3><p>Vehicle diagnostics and maintenance.</p></div><div class="card"><h3>Carpentry &amp; Joinery</h3><p>Furniture construction and woodworking skills.</p></div><div class="card"><h3>Tailoring &amp; Garment Design</h3><p>Fashion design and garment production.</p></div></div></div></section>
+
+<section id="student-life" class="student-life"><div class="container"><h2>Student Life</h2><div class="life-grid" id="lifeGrid"><div class="card"><h3>Science Club</h3><p>Research, innovation, experiments and science fairs.</p></div><div class="card"><h3>ICT Club</h3><p>Coding, computer skills and technology projects.</p></div><div class="card"><h3>Wildlife Club</h3><p>Environmental conservation and sustainability.</p></div><div class="card"><h3>Writers Club</h3><p>Creative writing, journalism and communication.</p></div><div class="card"><h3>Sports &amp; Athletics</h3><p>Football, basketball, volleyball and athletics.</p></div><div class="card"><h3>Leadership Development</h3><p>Prefects, committees and community service.</p></div></div></div></section>
+
+<section id="gallery" class="gallery"><div class="container"><h2>Gallery</h2><div class="gallery-preview" id="galleryMessage"><h3 style="color:#4b3c24;">📸 Campus Moments &amp; Excellence</h3><p>✨ Click on gallery to see interactive updates ✨</p></div></div></section>
+
+<section id="staff" class="staff"><div class="container"><h2>Staff Directory</h2><div class="staff-admin-preview" id="staffAdmin"><h3 style="color:#2b5a4f;">👥 Administration Leadership</h3><p>Mrs. Mawejje Deborah – Principal</p><p>Mr. Ssemwogeru Joseph – Deputy Academics</p><p>Mrs. Nakato Grace – Dean of Students</p><p>Mr. Okello Charles – Head of Vocational &amp; Technical Studies</p></div><div class="department-grid" id="deptGrid"><div class="card"><strong>Mathematics Department</strong></div><div class="card"><strong>Sciences Department</strong></div><div class="card"><strong>Languages Department</strong></div><div class="card"><strong>Humanities Department</strong></div><div class="card"><strong>ICT Department</strong></div><div class="card"><strong>Vocational Studies Department</strong></div><div class="card"><strong>Sports Department</strong></div></div></div></section>
+
+<section id="admissions" class="admissions-section"><div class="container"><h2>📝 Online Admissions 2026 – S1 &amp; S5</h2><div class="form-container"><p style="margin-bottom:1.5rem;">Apply for Senior One (S1) or Senior Five (S5) at Midland High School Mukono – Buntaba. Join a center of excellence rooted in SDA values, academic brilliance, and vocational skills.</p><form id="admissionForm" enctype="multipart/form-data"><div class="form-row"><div class="form-group"><label>Full Name *</label><input type="text" id="fullName" required=""></div><div class="form-group"><label>Date of Birth *</label><input type="date" id="dateOfBirth" required=""></div></div><div class="form-row"><div class="form-group"><label>Gender *</label><div class="radio-group"><label><input type="radio" name="gender" value="Male"> Male</label><label><input type="radio" name="gender" value="Female"> Female</label></div></div><div class="form-group"><label>Applying for Class *</label><select id="classLevel" required=""><option value="">-- Select --</option><option value="S1">Senior One (S1) - 2026</option><option value="S5">Senior Five (S5) - 2026</option></select></div></div><div class="form-row"><div class="form-group"><label>Previous School *</label><input type="text" id="prevSchool" required=""></div><div class="form-group"><label>Last Exam Results</label><input type="text" id="examResults" placeholder="e.g., Division One"></div></div><div class="form-row"><div class="form-group"><label>Parent/Guardian Name *</label><input type="text" id="parentName" required=""></div><div class="form-group"><label>Phone Number *</label><input type="tel" id="phone" placeholder="+256 XXX XXX XXX" required=""></div></div><div class="form-row"><div class="form-group"><label>Email Address</label><input type="email" id="email" placeholder="parent@example.com"></div><div class="form-group"><label>Preferred Combination (S5 only)</label><select id="combination" disabled="" style="opacity: 0.6;"><option value="">Not applicable</option><option value="PCM">PCM (Physics, Chem, Maths)</option><option value="PEM">PEM (Physics, Econ, Maths)</option><option value="HEG">HEG (History, Econ, Geography)</option><option value="BCM">BCM (Biology, Chem, Maths)</option><option value="Arts">Arts (History, Lit, RE)</option></select></div></div><div class="form-row"><div class="form-group file-group"><label>📷 Child Passport Photo (max 600KB)</label><input type="file" id="childPhoto" accept="image/jpeg,image/png,image/jpg"><small>JPEG/PNG only, max 600KB</small></div><div class="form-group file-group"><label>📄 Parent/Guardian Document (max 600KB)</label><input type="file" id="parentDoc" accept=".pdf,.jpg,.jpeg,.png"><small>PDF or Image, max 600KB</small></div></div><div class="form-group"><label>Additional Notes</label><textarea rows="2" id="notes" placeholder="Any medical conditions, talents, or remarks..."></textarea></div><button type="submit" class="submit-btn" id="submitBtn">🚀 Submit Application (Files under 600KB)</button></form><div class="info-box"><h3>📌 Admission Requirements</h3><p><strong>Senior One (S1):</strong> PLE results slip, birth certificate, recommendation letter.<br><strong>Senior Five (S5):</strong> UCE certificate with at least 8 passes.<br>🕊️ Scholarships available for gifted &amp; needy students.</p></div></div></div></section>
+
+<footer id="contact"><div class="container"><h2>Midland High School Mukono–Buntaba</h2><p>📍 Mukono, Uganda – Buntaba Road, off Kampala-Jinja Highway</p><p>📞 +256 782342922 | +256 702 456 789</p><p>✉ info@midlandhighschool.ac.ug | admissions@midlandhigh.ac.ug</p><div class="social-links"><a class="social-link" data-social="Facebook">Facebook</a><a class="social-link" data-social="Instagram">Instagram</a><a class="social-link" data-social="X">X (Twitter)</a><a class="social-link" data-social="YouTube">YouTube</a></div><p>© <span id="currentYear">2026</span> Midland High School Mukono–Buntaba. Inspiring Excellence, Building Futures.</p></div></footer>
+
+<button class="back-to-top" id="backToTopBtn">↑</button>
+<div id="toastMsg" class="toast-notification"></div>
+
+<script>
+// ==================== COMPLETE JAVASCRIPT WITH ALL UPDATES ====================
+// Admin credentials: admin@midland / mid@land.admin
+// Lockout after 3 failed attempts
+
+let failedAttempts = parseInt(sessionStorage.getItem('adminFailedAttempts') || '0');
+let isLocked = sessionStorage.getItem('adminLocked') === 'true';
+
+// Toast function
+function showToast(msg, dur=4000){ let t=document.getElementById('toastMsg'); if(t){ t.textContent=msg; t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),dur); } }
+
+// Mobile menu
+document.getElementById('menuToggle')?.addEventListener('click',()=>document.getElementById('navLinks')?.classList.toggle('show'));
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navLinks')?.classList.remove('show')));
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',function(e){ let h=this.getAttribute('href'); if(h==='#'){e.preventDefault();window.scrollTo({top:0,behavior:'smooth'});}else if(h&&h.startsWith('#')){let t=document.getElementById(h.substring(1));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'});}}}));
+
+// Back to top
+let backBtn=document.getElementById('backToTopBtn'); window.addEventListener('scroll',()=>{backBtn?.classList.toggle('show',window.scrollY>500);}); backBtn?.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+document.getElementById('currentYear').textContent=new Date().getFullYear();
+
+// Dynamic grids
+const subjects=["Mathematics","English Language","Biology","Chemistry","Physics","Geography","History","ICT","Agriculture","Entrepreneurship","Literature","Christian Religious Education"];
+const vocational=[{name:"Electrical Installation",desc:"Electrical wiring, maintenance and troubleshooting."},{name:"Bakery & Pastry",desc:"Bread making, cakes, pastries and food production."},{name:"Welding & Fabrication",desc:"Metal fabrication and welding skills."},{name:"Motor Vehicle Mechanics",desc:"Vehicle diagnostics and maintenance."},{name:"Carpentry & Joinery",desc:"Furniture construction and woodworking skills."},{name:"Tailoring & Garment Design",desc:"Fashion design and garment production."}];
+const life=[{name:"Science Club",desc:"Research, innovation, experiments and science fairs."},{name:"ICT Club",desc:"Coding, computer skills and technology projects."},{name:"Wildlife Club",desc:"Environmental conservation and sustainability."},{name:"Writers Club",desc:"Creative writing, journalism and communication."},{name:"Sports & Athletics",desc:"Football, basketball, volleyball and athletics."},{name:"Leadership Development",desc:"Prefects, committees and community service."}];
+const depts=["Mathematics Department","Sciences Department","Languages Department","Humanities Department","ICT Department","Vocational Studies Department","Sports Department"];
+function renderGrid(id,items,isObj=false){ let c=document.getElementById(id); if(c){ c.innerHTML=''; items.forEach(i=>{ let d=document.createElement('div'); d.className='card'; d.innerHTML=isObj?`<h3>${i.name}</h3><p>${i.desc}</p>`:`<strong>${i}</strong>`; d.onclick=()=>showToast(`✨ ${isObj?i.name:i} — Midland High School excels! ✨`); c.appendChild(d);});}}
+renderGrid('subjectGrid',subjects); renderGrid('vocationalGrid',vocational,true); renderGrid('lifeGrid',life,true); renderGrid('deptGrid',depts);
+
+// Class level handler
+let cls=document.getElementById('classLevel'), combo=document.getElementById('combination');
+if(cls&&combo){ cls.addEventListener('change',()=>{ let s5=cls.value==='S5'; combo.disabled=!s5; combo.style.opacity=s5?'1':'0.6'; if(!s5)combo.value='';}); combo.disabled=true; combo.style.opacity='0.6';}
+
+// File validation (max 600KB)
+function validateFile(file, maxKB=600){ if(!file) return true; if(file.size>maxKB*1024){ showToast(`❌ ${file.name} exceeds ${maxKB}KB limit!`,4000); return false; } let allowed=['image/jpeg','image/png','image/jpg','application/pdf']; if(!allowed.includes(file.type)){ showToast(`❌ Invalid file type for ${file.name}`,4000); return false; } return true; }
+
+// Form submission
+let form=document.getElementById('admissionForm'), subBtn=document.getElementById('submitBtn');
+form?.addEventListener('submit',async(e)=>{ e.preventDefault();
+  let childPhoto=document.getElementById('childPhoto').files[0], parentDoc=document.getElementById('parentDoc').files[0];
+  if(childPhoto && !validateFile(childPhoto,600)) return;
+  if(parentDoc && !validateFile(parentDoc,600)) return;
+  let data={ id:Date.now(), applicationNumber:'MID'+Date.now()+Math.floor(Math.random()*1000), fullName:document.getElementById('fullName').value, dateOfBirth:document.getElementById('dateOfBirth').value, gender:document.querySelector('input[name="gender"]:checked')?.value, classLevel:document.getElementById('classLevel').value, previousSchool:document.getElementById('prevSchool').value, examResults:document.getElementById('examResults').value||'Not provided', parentName:document.getElementById('parentName').value, phone:document.getElementById('phone').value, email:document.getElementById('email').value||'Not provided', combination:document.getElementById('combination').value||'N/A', additionalNotes:document.getElementById('notes').value||'None', childPhotoName:childPhoto?.name||'No file', parentDocName:parentDoc?.name||'No file', status:'pending', isRead:false, timestamp:new Date().toISOString() };
+  if(!data.fullName||!data.dateOfBirth||!data.gender||!data.classLevel||!data.previousSchool||!data.parentName||!data.phone){ showToast('❌ Fill all required fields',3000); return; }
+  if(data.classLevel==='S5' && (!data.combination||data.combination===''||data.combination==='Not applicable')){ showToast('⚠️ Select combination for S5',3000); return; }
+  subBtn.disabled=true; subBtn.innerHTML='⏳ Submitting...';
+  let apps=JSON.parse(localStorage.getItem('midland_apps')||'[]'); apps.unshift(data); localStorage.setItem('midland_apps',JSON.stringify(apps));
+  showToast(`✅ Application submitted! Ref: ${data.applicationNumber}`,5000); form.reset(); if(combo){combo.disabled=true;combo.style.opacity='0.6';}
+  document.querySelectorAll('input[name="gender"]').forEach(r=>r.checked=false);
+  document.getElementById('childPhoto').value=''; document.getElementById('parentDoc').value='';
+  subBtn.disabled=false; subBtn.innerHTML='🚀 Submit Application (Files under 600KB)';
+});
+
+// Gallery click
+let gal=document.getElementById('galleryMessage'); if(gal){ let msgs=["📸 Did you know? Midland students won the regional science fair 2025!","🏆 Vocational day exhibition draws hundreds of parents each term.","🎓 2026 graduation: 98% pass rate in UCE examinations!","🌍 Wildlife Club planted 500 trees in Mukono community.","💡 Midland High School ICT lab now features 40 new computers!"]; let idx=0; gal.onclick=()=>{ let p=gal.querySelector('p'); if(p) p.innerHTML=`✨ ${msgs[idx%msgs.length]} ✨`; showToast("🖼️ Gallery updated!"); idx++; };}
+
+// Social links
+document.querySelectorAll('.social-link').forEach(l=>l.addEventListener('click',(e)=>{e.preventDefault(); showToast(`🔔 Connect with Midland High on ${l.textContent} for news!`);}));
+
+// Staff admin click
+document.getElementById('staffAdmin')?.addEventListener('click',()=>showToast("👩‍🏫 Meet our dedicated staff — committed to your child's success!"));
+
+// Welcome message
+setTimeout(()=>{ if(!localStorage.getItem('midland_visited')){ showToast("👋 Welcome to Midland High School! Apply now for S1 & S5 admissions.",5000); localStorage.setItem('midland_visited','true'); }},1500);
+
+// ==================== ADMIN PANEL ====================
+function createAdminPanel(){
+  let panel=document.getElementById('adminPanel');
+  if(!panel){ panel=document.createElement('div'); panel.id='adminPanel'; panel.style.cssText='position:fixed; top:0; left:0; width:100%; height:100%; background:#f5f7fa; z-index:10000; overflow:auto; padding:20px; display:none;'; document.body.appendChild(panel); }
+  panel.innerHTML=`<div id="adminLoginBox" style="max-width:450px; margin:80px auto; background:white; border-radius:32px; padding:40px; box-shadow:0 20px 40px rgba(0,0,0,0.2);"><h2 style="color:#1f594e;">🔐 Admin Login</h2><p style="color:#666; margin-bottom:20px;">Midland High School Administration Portal</p><div id="loginError" style="color:#e74c3c; font-size:14px; min-height:40px;"></div><input type="email" id="adminEmail" placeholder="admin@midland" style="width:100%; padding:14px; margin:10px 0; border-radius:12px; border:1px solid #ddd;"><input type="password" id="adminPassword" placeholder="Password" style="width:100%; padding:14px; margin:10px 0; border-radius:12px; border:1px solid #ddd;"><button id="adminLoginBtn" style="width:100%; padding:14px; background:#f2b83b; border:none; border-radius:50px; font-weight:bold; cursor:pointer;">🔓 Login</button><p id="attemptCount" style="margin-top:15px; font-size:12px; color:#999; text-align:center;"></p><hr style="margin:20px 0;"><p style="font-size:12px; color:#999; text-align:center;">Demo: admin@midland / mid@land.admin<br>Lockout after 3 failed attempts</p></div><div id="adminDashboard" style="display:none;"><div style="background:#0a2c28; color:white; padding:15px 25px; border-radius:20px; margin-bottom:20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;"><h2 style="color:#f5c542;">📊 Admin Dashboard</h2><div><span id="adminUser">admin@midland</span> | <button id="logoutBtn" style="background:#e74c3c; border:none; padding:8px 20px; border-radius:30px; cursor:pointer; color:white;">🚪 Logout</button></div></div><div style="margin-bottom:25px;"><input type="text" id="searchInput" placeholder="🔍 Search by name, parent, phone, application number..." style="width:100%; padding:14px 20px; border-radius:50px; border:1px solid #ddd; font-size:16px;"></div><div id="statsBar" style="display:flex; gap:15px; margin-bottom:25px; flex-wrap:wrap;"></div><div id="applicationsList" style="background:white; border-radius:24px; overflow-x:auto; padding:20px;"></div></div>`;
+  
+  let loginBox=document.getElementById('adminLoginBox'), dashboard=document.getElementById('adminDashboard'), loginBtn=document.getElementById('adminLoginBtn'), errorSpan=document.getElementById('loginError'), attemptSpan=document.getElementById('attemptCount');
+  function updateAttempt(){ if(attemptSpan){ if(isLocked){ attemptSpan.innerHTML='🔒 ACCOUNT LOCKED - Access Denied'; attemptSpan.style.color='#e74c3c'; }else{ attemptSpan.innerHTML=`⚠️ Attempts remaining: ${3-failedAttempts}/3`; attemptSpan.style.color='#f39c12'; } } }
+  updateAttempt();
+  loginBtn.onclick=()=>{ if(isLocked){ errorSpan.innerHTML='🔒 ACCESS DENIED: Too many failed attempts.'; return; } let email=document.getElementById('adminEmail')?.value.trim(), pwd=document.getElementById('adminPassword')?.value; if(email==='admin@midland' && pwd==='mid@land.admin'){ failedAttempts=0; sessionStorage.setItem('adminFailedAttempts','0'); isLocked=false; sessionStorage.setItem('adminLocked','false'); loginBox.style.display='none'; dashboard.style.display='block'; renderApps(); showToast('✅ Welcome Admin!',3000); }else{ failedAttempts++; sessionStorage.setItem('adminFailedAttempts',failedAttempts); if(failedAttempts>=3){ isLocked=true; sessionStorage.setItem('adminLocked','true'); errorSpan.innerHTML='🔒 ACCOUNT LOCKED! Too many failed attempts.'; updateAttempt(); let overlay=document.createElement('div'); overlay.style.cssText='position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.95); z-index:20000; display:flex; align-items:center; justify-content:center;'; overlay.innerHTML='<div style="background:#2c3e50; padding:40px; border-radius:20px; text-align:center;"><h1 style="color:#e74c3c;">🚫 ACCESS DENIED</h1><p style="color:white;">Too many failed login attempts (3/3)</p><button onclick="location.reload()" style="margin-top:20px; padding:10px 30px; background:#f2b83b; border:none; border-radius:30px; cursor:pointer;">🔄 Refresh</button></div>'; document.body.appendChild(overlay); }else{ errorSpan.innerHTML=`❌ Invalid credentials! ${3-failedAttempts} attempts remaining.`; updateAttempt(); } } };
+  document.getElementById('logoutBtn')?.addEventListener('click',()=>{ loginBox.style.display='block'; dashboard.style.display='none'; document.getElementById('adminEmail').value=''; document.getElementById('adminPassword').value=''; errorSpan.innerHTML=''; });
+  
+  function renderApps(){ let apps=JSON.parse(localStorage.getItem('midland_apps')||'[]'); let search=document.getElementById('searchInput')?.value.toLowerCase()||''; let filtered=apps.filter(a=>a.fullName?.toLowerCase().includes(search)||a.parentName?.toLowerCase().includes(search)||a.phone?.includes(search)||a.applicationNumber?.toLowerCase().includes(search)); let total=apps.length, pending=apps.filter(a=>a.status==='pending').length, accepted=apps.filter(a=>a.status==='accepted').length, rejected=apps.filter(a=>a.status==='rejected').length, unread=apps.filter(a=>!a.isRead).length; let stats=document.getElementById('statsBar'); if(stats) stats.innerHTML=`<div class="card" style="background:#1f594e;color:white;">📋 Total: ${total}</div><div class="card" style="background:#f39c12;color:white;">⏳ Pending: ${pending}</div><div class="card" style="background:#27ae60;color:white;">✅ Accepted: ${accepted}</div><div class="card" style="background:#e74c3c;color:white;">❌ Rejected: ${rejected}</div><div class="card" style="background:#3498db;color:white;">🔴 Unread: ${unread}</div>`; let listDiv=document.getElementById('applicationsList'); if(!listDiv) return; if(filtered.length===0){ listDiv.innerHTML='<div style="padding:40px; text-align:center;">📭 No applications found</div>'; return; } let html='<table style="width:100%; border-collapse:collapse;"><thead><tr style="background:#f8f9fa;"><th>App #</th><th>Student</th><th>Class</th><th>Parent</th><th>Phone</th><th>Files</th><th>Status</th><th>Date</th><th>Action</th></tr></thead><tbody>'; filtered.forEach(app=>{ let unreadBadge=!app.isRead?'<span style="background:#e74c3c;color:white;padding:2px 8px;border-radius:20px;font-size:10px;margin-left:8px;">NEW</span>':''; let statusColor=app.status==='pending'?'#fff3cd':(app.status==='accepted'?'#d4edda':'#f8d7da'); let rowBg=!app.isRead?'background:#fff8e7':''; html+=`<tr style="border-bottom:1px solid #eee; ${rowBg}"><td style="padding:12px;"><strong>${app.applicationNumber}</strong>${unreadBadge}</td><td style="padding:12px;">${app.fullName}</td><td style="padding:12px;">${app.classLevel}</td><td style="padding:12px;">${app.parentName}</td><td style="padding:12px;">${app.phone}</td><td style="padding:12px; font-size:11px;">📷 ${app.childPhotoName!=='No file'?'✓':'✗'}<br>📄 ${app.parentDocName!=='No file'?'✓':'✗'}</td><td style="padding:12px;"><select class="statusSelect" data-id="${app.id}" style="background:${statusColor}; padding:6px 10px; border-radius:8px; border:none;"><option ${app.status==='pending'?'selected':''} value="pending">Pending</option><option ${app.status==='accepted'?'selected':''} value="accepted">Accepted</option><option ${app.status==='rejected'?'selected':''} value="rejected">Rejected</option></select></td><td style="padding:12px; font-size:12px;">${new Date(app.timestamp).toLocaleDateString()}</td><td style="padding:12px;"><button class="viewBtn" data-id="${app.id}" style="background:#3498db;color:white;border:none;padding:6px 12px;border-radius:8px;cursor:pointer;">View</button></td></tr>`; }); html+='</tbody></table>'; listDiv.innerHTML=html; document.querySelectorAll('.statusSelect').forEach(sel=>sel.addEventListener('change',function(){ let id=parseInt(this.dataset.id), newStatus=this.value, appsArr=JSON.parse(localStorage.getItem('midland_apps')||'[]'), idx=appsArr.findIndex(a=>a.id===id); if(idx!==-1){ appsArr[idx].status=newStatus; localStorage.setItem('midland_apps',JSON.stringify(appsArr)); renderApps(); showToast(`Status updated to ${newStatus}`,2000); } })); document.querySelectorAll('.viewBtn').forEach(btn=>btn.addEventListener('click',function(){ let id=parseInt(this.dataset.id), appsArr=JSON.parse(localStorage.getItem('midland_apps')||'[]'), app=appsArr.find(a=>a.id===id); if(app&&!app.isRead){ let idx=appsArr.findIndex(a=>a.id===id); appsArr[idx].isRead=true; localStorage.setItem('midland_apps',JSON.stringify(appsArr)); renderApps(); } alert(`📄 APPLICATION DETAILS\n━━━━━━━━━━━━━━━━━━━━\n📌 App #: ${app.applicationNumber}\n👤 Student: ${app.fullName}\n📅 DOB: ${app.dateOfBirth}\n⚥ Gender: ${app.gender}\n🎓 Class: ${app.classLevel}\n🏫 Previous School: ${app.previousSchool}\n📊 Results: ${app.examResults}\n👪 Parent: ${app.parentName}\n📞 Phone: ${app.phone}\n✉️ Email: ${app.email}\n📚 Combination: ${app.combination}\n📷 Photo: ${app.childPhotoName}\n📄 Document: ${app.parentDocName}\n📝 Notes: ${app.additionalNotes}\n━━━━━━━━━━━━━━━━━━━━\n📅 Applied: ${new Date(app.timestamp).toLocaleString()}\n📊 Status: ${app.status.toUpperCase()}`); })); }
+  document.getElementById('searchInput')?.addEventListener('input',renderApps);
+  window.renderApps=renderApps;
+}
+
+// Admin button
+let adminLi=document.createElement('li'); adminLi.innerHTML='<a href="#" id="openAdminBtn" style="background:#f2b83b;color:#1e3d37;padding:5px 15px;border-radius:30px;">👑 Admin</a>';
+document.querySelector('.nav-links')?.appendChild(adminLi);
+document.getElementById('openAdminBtn')?.addEventListener('click',(e)=>{ e.preventDefault(); if(isLocked){ showToast('🔒 ADMIN ACCESS DENIED: Too many failed attempts. Refresh page.',5000); return; } createAdminPanel(); document.getElementById('adminPanel').style.display='block'; });
+
+console.log('✅ System Ready | Admin: admin@midland / mid@land.admin | Lockout after 3 fails | File limit: 600KB');
+</script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
